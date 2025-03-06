@@ -27,6 +27,6 @@ TRACE_1("fnc_drop",_this);
     _weaponHolder = createVehicle ["GroundWeaponHolder", [0,0,0], [], 0, "NONE"];
     _weaponHolder setPosASL getPosASL _unit;
     _weaponHolder addItemCargoGlobal [_item, 1];
-	_unit removeItem _item;
+    _unit removeItem _item;
 
 }, [_unit, _item], 1.5] call CBA_fnc_waitAndExecute;

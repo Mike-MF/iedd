@@ -56,8 +56,8 @@ private _fnc_onUnload = {
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
-	private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
-	private _pos = _logic modelToWorld [0,0,0];
+    private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _pos = _logic modelToWorld [0,0,0];
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
     private _typeCtrl = _display displayCtrl 52520;
@@ -79,7 +79,7 @@ private _fnc_onConfirm = {
     private _value = round(sliderPosition (_display displayCtrl 52526));
     private _lidStateCtrl = _display displayCtrl 52528;
     private _lidState = lbCurSel _lidStateCtrl;
-    private _oce = sliderPosition (_display displayCtrl 52530);    
+    private _oce = sliderPosition (_display displayCtrl 52530);
     private _oc = sliderPosition (_display displayCtrl 52532);
     [QGVAR(createIed), [_type,_pos,_variation,_dud,_size,_timer,_value,_dist,_typeNum,_lidState,_oce,_oc]] call CBA_fnc_serverEvent;
 };

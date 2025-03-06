@@ -122,16 +122,16 @@ class GVAR(RscCharge): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0, 0, 0, 0.7};
                             class Items {
-                                class 1	{
+                                class 1    {
                                     text = ECSTRING(ied,Name_Disabled);
                                     value = 0;
                                     default = 1;
                                 };
-                                class 2	{
+                                class 2    {
                                     text = ECSTRING(ied,Name_Enabled);
                                     value = 1;
                                 };
-                                class 3	{
+                                class 3    {
                                     text = ECSTRING(ied,Name_Random);
                                     value = 2;
                                 };
@@ -165,12 +165,12 @@ class GVAR(RscCharge): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0, 0, 0, 0.7};
                             class Items {
-                                class 1	{
+                                class 1    {
                                     text = ECSTRING(ied,Name_Disabled);
                                     value = 0;
                                     default = 1;
                                 };
-                                class 2	{
+                                class 2    {
                                     text = ECSTRING(ied,Name_Enabled);
                                     value = 1;
                                 };
@@ -190,12 +190,12 @@ class GVAR(RscCharge): RscDisplayAttributes {
                             h = QUOTE(H_PART(1));
                             colorBackground[] = {0, 0, 0, 0.7};
                             class Items {
-                                class 1	{
+                                class 1    {
                                     text = ECSTRING(ied,Name_Disabled);
                                     value = 0;
                                     default = 1;
                                 };
-                                class 2	{
+                                class 2    {
                                     text = ECSTRING(ied,Name_Enabled);
                                     value = 1;
                                 };

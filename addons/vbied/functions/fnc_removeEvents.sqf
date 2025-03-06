@@ -8,6 +8,6 @@ if (_getInEhId > -1) then {
 
 private _engineOnEhId = _vehicle getVariable [QGVAR(engineOnEhId), -1];
 if (_engineOnEhId > -1) then {
-	_vehicle removeEventHandler ["Engine", _engineOnEhId];
-	_vehicle setVariable [QGVAR(engineOnEhId),-1];
+    _vehicle removeEventHandler ["Engine", _engineOnEhId];
+    _vehicle setVariable [QGVAR(engineOnEhId),-1];
 };

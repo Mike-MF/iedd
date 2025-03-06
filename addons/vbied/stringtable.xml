@@ -229,8 +229,8 @@
                 <English>Controls if VBIEDs are detectable with mine detectors.</English>
             </Key>
             <Key ID="STR_iedd_vbied_Main_Category">
-                <Original>IEDD Notebook VBIED</Original>
-                <English>IEDD Notebook VBIED</English>
+                <Original>IEDD Notebook VBIED (DISABLED)</Original>
+                <English>IEDD Notebook VBIED (DISABLED)</English>
             </Key>
             <Key ID="STR_iedd_vbied_MaxRange">
                 <Original>Maximum activation distance for VBIEDs</Original>

@@ -1,7 +1,7 @@
 class DemoCharge_F;
 class GVAR(Charge):DemoCharge_F
 {
-    author = AUTHOR;
+    author = ECSTRING(main,author);
     mapSize = 0.01;
     _generalMacro = "DemoCharge_F";
     scope = 1;
@@ -10,5 +10,5 @@ class GVAR(Charge):DemoCharge_F
     ammo = QGVAR(Charge_Ammo);
     defaultMagazine = QGVAR(Charge_Mag);
     displayName = CSTRING(Charge_DisplayName);
-    
+
 };

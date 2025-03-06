@@ -24,7 +24,7 @@ class RscDisplayAttributes {
     };
 };
 #include "RcsIeds.hpp"
-#include "RcsVbied.hpp"
+//#include "RcsVbied.hpp"
 #include "RcsDecals.hpp"
 #include "RcsCharge.hpp"
 #include "RcsSuicide.hpp"

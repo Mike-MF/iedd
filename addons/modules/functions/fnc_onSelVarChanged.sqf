@@ -25,7 +25,7 @@ private _typeCtrl = _display displayCtrl 52520;
 private _typeNum = lbCurSel _typeCtrl;
 private _type = _typeCtrl lbData _typeNum;
 private _varCtrl = _display displayCtrl 52521;
-lbClear	_varCtrl;
+lbClear    _varCtrl;
 private _data = "true" configClasses (configFile >> "CfgVehicles" >> _type >> "Attributes" >> "iedd_ied_variation" >> "Values");
 {
     private _name = getText (_x >> "name");
@@ -44,7 +44,7 @@ private _ctrlCancel = _display displayCtrl 2;
 /*
 private _ocCtrls = allControls _grpCtrl select {"openClose" in (ctrlClassName _x)};
 private _color = [[0, 0, 0, 0.5],[1,1,1,1]] select _state; //TO DO GET CORRECT COLORS!
-private _bgcolor = [[0, 0, 0, 0.2],[0, 0, 0, 0.5]] select _state; 
+private _bgcolor = [[0, 0, 0, 0.2],[0, 0, 0, 0.5]] select _state;
 {
     _x ctrlSetTextColor _color;
     _x ctrlSetBackgroundColor _bgcolor;
@@ -101,7 +101,7 @@ if (_state) then {
         (W_PART(15.9)),
         (H_PART(1))
     ];
-    _oceSlider ctrlCommit 0;    
+    _oceSlider ctrlCommit 0;
     _oceSlider call FUNC(sliderMove);
 
     private _ocCtrl = _display ctrlCreate ["RscText", 52531, _grpCtrl];
@@ -124,7 +124,7 @@ if (_state) then {
     ];
     _ocSlider ctrlCommit 0;
     _ocSlider call FUNC(sliderMove);
-    
+
     _ctrlOK ctrlSetPosition [W_PART(25.1667), H_PART(19.2125), W_PART(5), H_PART(1)];
     _ctrlOK ctrlCommit 0;
     _ctrlCancel ctrlSetPosition [W_PART(3.1667), H_PART(19.2125), W_PART(5), H_PART(1)];
@@ -142,7 +142,7 @@ if (_state) then {
         for "_i" from 52527 to 52532 do {
             private _ctrl = _display displayCtrl _i;
             ctrlDelete _ctrl;
-        }; 
+        };
     };
     _bgCtrl ctrlSetPosition [W_PART(3.1667), H_PART(8.0875), W_PART(27), H_PART(8.825)];
     _bgCtrl ctrlCommit 0;

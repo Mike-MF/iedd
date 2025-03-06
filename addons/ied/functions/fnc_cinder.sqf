@@ -87,16 +87,16 @@ if (!isServer) exitWith {};
     };
 
     private _gasCan1 = createSimpleObject ["Land_GasCanister_F",[0,0,0]];
-    _gasCan1 attachTo 	[_bombObj,[-0.002,0.08,-0.053]];
+    _gasCan1 attachTo     [_bombObj,[-0.002,0.08,-0.053]];
     _gasCan1 setVectorDirAndUp [[0,1,-0.015],[0.002,0.015,1]];
     private _gasCan2 = createSimpleObject ["Land_GasCanister_F",[0,0,0]];
-    _gasCan2 attachTo 	[_bombObj,[0,-0.079,-0.053]];
+    _gasCan2 attachTo     [_bombObj,[0,-0.079,-0.053]];
     _gasCan2 setVectorDirAndUp [[0,1,-0.015],[0.002,0.015,1]];
     private _battery1 = createSimpleObject ["Land_Battery_F", [0,0,0]];
-    _battery1 attachTo 	[_bombObj,[-0.047,0.108,0.009]];
+    _battery1 attachTo     [_bombObj,[-0.047,0.108,0.009]];
     _battery1 setVectorDirAndUp [[0,0.008,1],[0.002,-1,0.008]];
     private _battery2 = createSimpleObject ["Land_Battery_F", [0,0,0]];
-    _battery2 attachTo 	[_bombObj,[-0.013,0.108,0.014]];
+    _battery2 attachTo     [_bombObj,[-0.013,0.108,0.014]];
     _battery2 setVectorDirAndUp [[-0.955,0.023,0.296],[-0,-0.997,0.078]];
     private _subObj0 = createSimpleObject ["IEDD_WireCorner"+(_wireSet #0#0), [0,0,0]]; // 0 wire
     private _subObj1 = createSimpleObject ["IEDD_WireCorner"+(_wireSet #0#1), [0,0,0]]; // 1 wire
@@ -109,12 +109,12 @@ if (!isServer) exitWith {};
 
     private _subObjPosAndDir = [
         // Position     VectorDirAndUp      Description
-        [[0.055,0.02,0.02],[[-0.998,0.06,0.001],[0.06,0.998,-0.031]]],        		// 1. wire
+        [[0.055,0.02,0.02],[[-0.998,0.06,0.001],[0.06,0.998,-0.031]]],                // 1. wire
         [[-0.044,0.047,-0.012],[[-0.06,-0.982,0.181],[-0.161,0.188,0.969]]],        // 2. wire
-        [[0.055,0.02,-0.005],[[-0.999,0.043,-0.026],[0.045,0.995,-0.091]]],        	// 3. wire
-        [[0.053,0.018,0.002],[[-0.155,0.987,0.052],[-0.988,-0.156,0.009]]],        	// 4. wire
-        [[-0.021,0.048,-0.003],[[0.313,-0.003,0.95],[0.001,-1,-0.004]]],        	// 5. wire
-        [[-0,-0.049,0.007],[[0.307,-0.78,0.546],[-0.023,0.567,0.823]]],       		// 6. (short)
+        [[0.055,0.02,-0.005],[[-0.999,0.043,-0.026],[0.045,0.995,-0.091]]],            // 3. wire
+        [[0.053,0.018,0.002],[[-0.155,0.987,0.052],[-0.988,-0.156,0.009]]],            // 4. wire
+        [[-0.021,0.048,-0.003],[[0.313,-0.003,0.95],[0.001,-1,-0.004]]],            // 5. wire
+        [[-0,-0.049,0.007],[[0.307,-0.78,0.546],[-0.023,0.567,0.823]]],               // 6. (short)
         [[-0.013,-0.048,0.002],[[-0.169,0.458,0.872],[0.274,-0.828,0.489]]]         // 7. (short)
     ];
 

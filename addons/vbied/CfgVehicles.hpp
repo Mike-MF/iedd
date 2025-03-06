@@ -24,27 +24,27 @@ class CfgVehicles {
                     condition = QUOTE(true); //QUOTE([_player] call EFUNC(ied, canDisarm));
                     statement = "";
                     insertChildren = QUOTE(_this call FUNC(disarmActions));
-			    };
+                };
             };
         };
     };*/
     class GVAR(box): GVAR(helper) {
         author=AUTHOR;
-		/*_generalMacro="";
-		scope = 0;
-		scopeCurator = 0;
-		scopeArsenal = 0;
-		editorCategory = "IEDD_MAINCATEGORY";
-		editorSubcategory = "IEDD_ITEMS";
-		vehicleClass = "IEDD_ITEMS";*/
-		displayName=CSTRING(Box_DisplayName);
+        /*_generalMacro="";
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
+        editorCategory = "IEDD_MAINCATEGORY";
+        editorSubcategory = "IEDD_ITEMS";
+        vehicleClass = "IEDD_ITEMS";*/
+        displayName=CSTRING(Box_DisplayName);
         //simulation = "thingX";
         //destrType = "DestructNo";
-		//picture="\A3\Weapons_F_Enoch\Items\data\ui\gear_ChemicalDetector_01_CA.paa";
-		model="\a3\Weapons_F_Enoch\Items\ChemicalDetector_01_F.p3d";
+        //picture="\A3\Weapons_F_Enoch\Items\data\ui\gear_ChemicalDetector_01_CA.paa";
+        model="\a3\Weapons_F_Enoch\Items\ChemicalDetector_01_F.p3d";
         useAction = 0;
         ace_dragging_canDrag = 0;
-		ace_dragging_canCarry = 0;
+        ace_dragging_canCarry = 0;
         class ACE_Actions {
             class ACE_MainActions {
                 displayName = "$STR_ace_interaction_MainAction";

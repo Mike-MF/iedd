@@ -127,7 +127,7 @@ class GVAR(isCharge): CheckboxState {
         class Title: Title{};
         class Value: Value
         {
-            onCheckedChanged = QUOTE(call FUNC(onChargeChanged));   
+            onCheckedChanged = QUOTE(call FUNC(onChargeChanged));
         };
     };
 };
@@ -139,8 +139,8 @@ class GVAR(isSuicide): Checkbox {
         {
             onCheckedChanged = "\
             private _ctrlCheckbox = _this select 0;\
-			private _state = [true,false] select (cbChecked _ctrlCheckbox);\
-			private _fade = [0.75,0] select _state;\
+            private _state = [true,false] select (cbChecked _ctrlCheckbox);\
+            private _fade = [0.75,0] select _state;\
             private _all = (allcontrols (ctrlparent _ctrlCheckbox) - [ctrlParentControlsGroup _ctrlCheckbox]);\
             private _controls = _all select {ctrlclassname _x find [""iedd_ied"", 0] == 0};\
             private _isCharge = _controls select {ctrlclassname _x == ""iedd_ied_isCharge""};\
@@ -164,8 +164,8 @@ class GVAR(isSuicide): Checkbox {
             _this spawn {\
                 disableserialization;\
                 private _ctrlCheckbox = _this select 0;\
-				private _state = [true,false] select (cbChecked _ctrlCheckbox);\
-				private _fade = [0.75,0] select _state;\
+                private _state = [true,false] select (cbChecked _ctrlCheckbox);\
+                private _fade = [0.75,0] select _state;\
                 private _all = (allcontrols (ctrlparent _ctrlCheckbox) - [ctrlParentControlsGroup _ctrlCheckbox]);\
                 private _controls = _all select {ctrlclassname _x find [""iedd_ied"", 0] == 0};\
                 private _isCharge = _controls select {ctrlclassname _x == ""iedd_ied_isCharge""};\
@@ -193,7 +193,7 @@ class GVAR(isSuicide): Checkbox {
 class GVAR(distDMS): Checkbox {};
 class GVAR(distSides): Checkbox {
     attributeLoad = "[_this, _value] call iedd_ied_fnc_sides_onAttributeLoad";
-	attributeSave = "[\
+    attributeSave = "[\
         [-1, 0] select (cbChecked (_this controlsGroupCtrl 100)),\
         [-1, 1] select (cbChecked (_this controlsGroupCtrl 101)),\
         [-1, 2] select (cbChecked (_this controlsGroupCtrl 102)),\
@@ -202,7 +202,7 @@ class GVAR(distSides): Checkbox {
     class Controls: Controls {
         class Title: Title{};
         class EastV: ctrlCheckbox
-		{
+        {
             idc = 100;
             y = QUOTE(GRID_Y_POS);
             x = QUOTE((ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W * 1/30) * GRID_W);
@@ -219,11 +219,11 @@ class GVAR(distSides): Checkbox {
             textureDisabledChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_east_ca.paa";
             textureDisabledUnchecked = "\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\side_east_ca.paa";
             tooltip="$STR_EAST";
-		};
+        };
         class WestV: EastV
-		{
+        {
             idc = 101;
-			x=QUOTE((ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W * 1/4) * GRID_W);
+            x=QUOTE((ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W * 1/4) * GRID_W);
             textureChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_west_ca.paa";
             textureUnchecked = "\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\side_west_ca.paa";
             textureFocusedChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_west_ca.paa";
@@ -235,9 +235,9 @@ class GVAR(distSides): Checkbox {
             textureDisabledChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_west_ca.paa";
             textureDisabledUnchecked = "\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\side_west_ca.paa";
             tooltip="$STR_WEST";
-		};
+        };
         class GuerV: EastV
-		{
+        {
             idc = 102;
             x=QUOTE((ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W * 2/4) * GRID_W);
             textureChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_guer_ca.paa";
@@ -251,9 +251,9 @@ class GVAR(distSides): Checkbox {
             textureDisabledChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_guer_ca.paa";
             textureDisabledUnchecked = "\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\side_guer_ca.paa";
             tooltip="$STR_Guerrila";
-		};
+        };
         class CivV: EastV
-		{
+        {
             idc = 103;
             x=QUOTE((ATTRIBUTE_TITLE_W + ATTRIBUTE_CONTENT_W * 3/4) * GRID_W);
             textureChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_civ_ca.paa";
@@ -267,6 +267,6 @@ class GVAR(distSides): Checkbox {
             textureDisabledChecked = "\a3\3DEN\Data\Displays\Display3DEN\PanelRight\side_civ_ca.paa";
             textureDisabledUnchecked = "\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\side_civ_ca.paa";
             tooltip="$STR_Civilian";
-		};
+        };
     };
 };

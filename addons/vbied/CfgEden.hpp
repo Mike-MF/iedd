@@ -17,9 +17,11 @@ class Cfg3DEN {
     class Attributes {
         #include "controls.hpp"
     };
+    /*
     class object {
         class AttributeCategories {
            #include "vbied_attributes.hpp"
         };
     };
+    */
 };

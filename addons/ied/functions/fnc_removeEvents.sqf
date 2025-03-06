@@ -39,5 +39,5 @@ if (_isCharge) then {
 
 private _isSuicide = _unit getVariable [QGVAR(isSuicide),false];
 if (_isSuicide) then {
-	_unit setVariable [QGVAR(suicideWP), nil,true];
+    _unit setVariable [QGVAR(suicideWP), nil,true];
 };

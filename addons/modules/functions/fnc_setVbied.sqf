@@ -35,23 +35,23 @@ if (isNull _vehicle) exitWith {
 };
 private _allVehicles = entities [["LandVehicle","Air","Ship"], []];
 if !(_vehicle in _allVehicles) exitWith { //Check vehicle , how
-	_message = "Type of unit is not vehicle";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Type of unit is not vehicle";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 if (!alive _vehicle) exitWith {
-	_message = "Vehicle is not alive";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Vehicle is not alive";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 private _attachedObjects = attachedObjects _vehicle;
 private _index = _attachedObjects findIf {typeOf _x == QEGVAR(vbied,box)};
 if (_index > -1) exitWith {
-	_message = "Vehicle have VBIED attached already";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Vehicle have VBIED attached already";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 private _model = getModelInfo _vehicle select 0;
@@ -142,7 +142,7 @@ private _fnc_onUnload = {
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
-	private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
     private _vehicle = attachedTo _logic;

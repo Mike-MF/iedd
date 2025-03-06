@@ -1,29 +1,23 @@
 #include "script_component.hpp"
 class CfgPatches {
-	class ADDON {
-		author = AUTHOR;
-		authors[] = {"Prisoner","Lion"};
-		name = COMPONENT_NAME;
-		units[] = {
-			"iedd_equipment_Base",
-			"iedd_equipment_Box",
+    class ADDON {
+        author = ECSTRING(main,author);
+        authors[] = {"Prisoner","Lion"};
+        name = COMPONENT_NAME;
+        units[] = {
+            "iedd_equipment_Base",
             "iedd_item_Base",
-			"iedd_item_Notebook",
-			"iedd_equipment_mine"
+            "iedd_item_Notebook",
+            "iedd_equipment_mine"
         };
-		weapons[] = {
-			"iedd_item_notebook"
-		};
-		requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {
-            "A3_Characters_F",
-            "A3_Supplies_F_Exp_Ammoboxes",
-			"ace_main",
-			"iedd_main"
+        weapons[] = {
+            "iedd_item_notebook"
         };
-		url = "https://community.bistudio.com/wiki";
-		VERSION_CONFIG;
-	};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"iedd_main"};
+        url = "https://github.com/prisonerMO/iedd";
+        VERSION_CONFIG;
+    };
 };
 
 #include "CfgEventHandlers.hpp"

@@ -1,8 +1,10 @@
 #define MAJOR 1
-#define MINOR 8
-#define PATCHLVL 2
-#define BUILD 27250226
-/******
-Build 27 to next release
-Current dev 1.8.2.27****
-*******/
+#define MINOR 0
+#define PATCHLVL 0
+#define BUILD 0
+
+/*
+ * Custom version to start at 1.0.0
+ * IEDD original starts at 1.8.1
+ * Version disables utilisation of VBIeds.
+*/

@@ -14,8 +14,8 @@
     QGVAR(wireCutTimeEOD),
     "TIME",
     [LSTRING(WireCutTimeEOD), LSTRING(WireCutTimeEOD_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
-    [1, 30, 5],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
+    [1, 30, 3],
     1
 ] call CBA_fnc_addSetting;
 
@@ -23,7 +23,7 @@
     QGVAR(wireCutTime),
     "TIME",
     [LSTRING(WireCutTime), LSTRING(WireCutTime_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
     [1, 30, 10],
     1
 ] call CBA_fnc_addSetting;
@@ -83,7 +83,7 @@
     QGVAR(failChanceEOD),
     "SLIDER",
     [LSTRING(FailChanceEOD), LSTRING(FailChanceEOD_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
     [0, 1, 0.1, 0, true],
     1
 ] call CBA_fnc_addSetting;
@@ -101,7 +101,7 @@
     QGVAR(failExploseChance),
     "SLIDER",
     [LSTRING(FailExploseChance), LSTRING(FailExploseChance_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
     [0, 1, 0.2, 0, true],
     1
 ] call CBA_fnc_addSetting;
@@ -110,7 +110,7 @@
     QGVAR(ignoreWireCutOrder),
     "CHECKBOX",
     [CSTRING(IgnoreWireCutOrder),CSTRING(IgnoreWireCutOrder_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
     false,
     true,
     {},
@@ -132,7 +132,7 @@
     QGVAR(defaultOpenCloseEOD),
     "SLIDER",
     [LSTRING(DefaultOpenCloseEOD), LSTRING(OpenCloseEOD_Description)],
-	[localize "STR_iedd_main_Category_Main","IEDs"],
+    [localize "STR_iedd_main_Category_Main","IEDs"],
     [0, 1, 0.05, 0, true],
     1
 ] call CBA_fnc_addSetting;
@@ -151,7 +151,7 @@
     "CHECKBOX",
     [LSTRING(AddNotebook), LSTRING(AddNotebook_Description)],
     [localize "STR_iedd_main_Category_Main","Items"],
-    true,
+    false,
     true,
     {},
     true // Needs mission restart
@@ -162,7 +162,7 @@
     "CHECKBOX",
     [LSTRING(AddDefusalKit), LSTRING(AddDefusalKit_Description)],
     [localize "STR_iedd_main_Category_Main","Items"],
-    true,
+    false,
     true,
     {},
     true // Needs mission restart
@@ -189,6 +189,7 @@
     {},
     true // Needs mission restart
 ] call CBA_fnc_addSetting;
+
 /**SUICIDE */
 [
     QGVAR(expMinRange),
@@ -324,7 +325,7 @@
     QGVAR(defaultDud),
     "SLIDER",
     [LSTRING(DefaultDud), LSTRING(DefaultDud_Description)],
-	[localize "STR_iedd_main_Category_Main","IED Default Values"],
+    [localize "STR_iedd_main_Category_Main","IED Default Values"],
     [0, 1, 0.2, 0, true],
     true,
     {},
@@ -384,7 +385,7 @@
     QGVAR(defaultTimerValue),
     "TIME",
     [LSTRING(TimerValue), LSTRING(DefaultTimerValue_Description)],
-	[localize "STR_iedd_main_Category_Main","IED Default Values"],
+    [localize "STR_iedd_main_Category_Main","IED Default Values"],
     [1, 300, 120],
     2
 ] call CBA_fnc_addSetting;
@@ -410,7 +411,7 @@
     QGVAR(defaultTimerMin),
     "TIME",
     [LSTRING(RandomTimerMin), LSTRING(DefaultTimerMin_Description)],
-	[localize "STR_iedd_main_Category_Main","IED Default Values"],
+    [localize "STR_iedd_main_Category_Main","IED Default Values"],
     [1, 300, 60],
     2
 ] call CBA_fnc_addSetting;
@@ -420,7 +421,7 @@
     QGVAR(defaultTimerMax),
     "TIME",
     [LSTRING(RandomTimerMax), LSTRING(DefaultTimerMax_Description)],
-	[localize "STR_iedd_main_Category_Main","IED Default Values"],
+    [localize "STR_iedd_main_Category_Main","IED Default Values"],
     [1, 300, 150],
     2
 ] call CBA_fnc_addSetting;

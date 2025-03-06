@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="IEDD">
     <Package name="Equipment">
-        <Key ID="STR_iedd_equipment_EquipmentBox_displayName">
-            <Original>IEDD Equipment Box</Original>
-            <English>IEDD Equipment Box</English>
-        </Key>
         <Key ID="STR_iedd_equipment_PickUp">
             <Original>Pick Up</Original>
             <English>Pick Up</English>

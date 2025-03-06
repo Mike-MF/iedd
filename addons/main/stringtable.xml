@@ -62,5 +62,8 @@
             <Original>Vehicle-borne Improvised Explosive Device</Original>
             <English>Vehicle-borne Improvised Explosive Device</English>
         </Key>
+        <Key ID="STR_iedd_main_author">
+            <English>Prisoner</English>
+        </Key>
     </Package>
 </Project>

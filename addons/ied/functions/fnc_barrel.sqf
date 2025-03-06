@@ -91,16 +91,16 @@ if (!isServer) exitWith {};
     };
 
     private _battery1 = createSimpleObject ["Land_BatteryPack_01_battery_black_F",[0,0,0]];
-    _battery1 attachTo 	[_bombObj,[0.174,0.006,0.148]];
+    _battery1 attachTo     [_bombObj,[0.174,0.006,0.148]];
     _battery1 setVectorDirAndUp [[-0.417,0.909,0.001],[-0.908,-0.417,-0.032]];
     private _battery2 = createSimpleObject ["Land_BatteryPack_01_battery_black_F",[0,0,0]];
-    _battery2 attachTo 	[_bombObj,[0.1,-0.159,0.168]];
+    _battery2 attachTo     [_bombObj,[0.1,-0.159,0.168]];
     _battery2 setVectorDirAndUp [[-0.447,0.894,0.02],[-0.011,0.017,-1]];
     private _cyl1 = createSimpleObject ["SCBACylinder_01_F", [0,0,0]];
-    _cyl1 attachTo 	[_bombObj,[0.165,0.017,-0.146]];
+    _cyl1 attachTo     [_bombObj,[0.165,0.017,-0.146]];
     _cyl1 setVectorDirAndUp [[0,0.041,0.999],[0.005,-0.999,0.041]];
     private _cyl2 = createSimpleObject ["SCBACylinder_01_F", [0,0,0]];
-    _cyl2 attachTo 	[_bombObj,[0.074,-0.132,-0.152]];
+    _cyl2 attachTo     [_bombObj,[0.074,-0.132,-0.152]];
     _cyl2 setVectorDirAndUp [[0.006,0.012,1],[-0.725,0.689,-0.004]];
 
     private _subObj0 = createSimpleObject ["IEDD_WireCorner"+(_wireSet #0#0),[0,0,0]]; // 0 wire
@@ -114,7 +114,7 @@ if (!isServer) exitWith {};
 
     _subObjPosAndDir = [
         // Position                        VectorDirAndUp                            Description
-        [[0.128,-0.084,0.135],[[1,0.027,-0],[0.027,-1,0.009]]],        			// 1 wire
+        [[0.128,-0.084,0.135],[[1,0.027,-0],[0.027,-1,0.009]]],                    // 1 wire
         [[0.142,-0.061,0.126],[[-0.621,0.784,-0.002],[-0.781,-0.618,0.092]]],   // 2 wire
         [[0.134,-0.049,0.156],[[0.999,-0.032,-0.003],[-0.032,-0.991,0.13]]],    // 3 wire
         [[0.167,-0.058,0.118],[[-0.098,0.121,0.988],[-0.397,-0.915,0.072]]],    // 4 wire
@@ -149,7 +149,7 @@ if (!isServer) exitWith {};
             round (_bombObj getVariable  [QGVAR(timerValue),GVAR(defaultTimerValue)]);
         };
         TRACE_1("time:",_time);
-        _bombObj setVariable [QGVAR(timerValue), _time];        
+        _bombObj setVariable [QGVAR(timerValue), _time];
         _bombObj setVariable [QGVAR(timer),_isTimer, true];
     };
 

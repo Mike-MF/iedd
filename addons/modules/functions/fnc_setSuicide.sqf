@@ -33,21 +33,21 @@ if (isNull _unit) exitWith {
     _display closeDisplay 2;
 };
 if !(_unit isKindOf "CAManBase") exitWith {
-	_message = "Type of unit is not infantry";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Type of unit is not infantry";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 if (!alive _unit) exitWith {
-	_message = "Unit is not alive";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Unit is not alive";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 if (_unit getVariable ["iedd_ied_isCharge",false]) exitWith {
-	_message = "Unit have IED vest already";
-	deleteVehicle _logic;
-	[ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
+    _message = "Unit have IED vest already";
+    deleteVehicle _logic;
+    [ace_player, _message] call BIS_fnc_showCuratorFeedbackMessage;
     _display closeDisplay 2;
 };
 
@@ -102,7 +102,7 @@ private _fnc_onUnload = {
 
 private _fnc_onConfirm = {
     params [["_ctrlButtonOK", controlNull, [controlNull]]];
-	private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
+    private _logic = missionNamespace getVariable ["BIS_fnc_initCuratorAttributes_target",objNull];
     private _display = ctrlParent _ctrlButtonOK;
     if (isNull _display) exitWith {};
     private _unit = attachedTo _logic;

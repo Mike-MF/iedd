@@ -2,21 +2,16 @@
 class CfgPatches {
 
     class ADDON {
-		author = AUTHOR;
-		authors[] = {"Prisoner","Lion","Antihilator"};
-		name = COMPONENT_NAME;
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = REQUIRED_VERSION;
-		requiredAddons[] = {
-			"3den",
-			"A3_Ui_F",
-			"ace_interaction",
-			"iedd_main"
-        };
-		url = "https://community.bistudio.com/wiki";
-		VERSION_CONFIG;
-	};
+        author = ECSTRING(main,author);
+        authors[] = {"Prisoner","Lion","Antihilator"};
+        name = COMPONENT_NAME;
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] = {"iedd_main"};
+        url = "https://github.com/prisonerMO/iedd";
+        VERSION_CONFIG;
+    };
 };
 #include "CfgEventHandlers.hpp"
 #include "ACE_zeusActions.hpp"

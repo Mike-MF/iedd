@@ -54,7 +54,7 @@ class GVAR(SaveDelete): Title
             text = CSTRING(Delete);
             tooltip = CSTRING(Delete_Tooltip);
             onButtonClick = "_this call iedd_vbied_fnc_delete_onButtonClick";
-            x = QUOTE((ATTRIBUTE_TITLE_W + 	ATTRIBUTE_CONTENT_W * (1/3) + ATTRIBUTE_CONTENT_H) * GRID_W);
+            x = QUOTE((ATTRIBUTE_TITLE_W +     ATTRIBUTE_CONTENT_W * (1/3) + ATTRIBUTE_CONTENT_H) * GRID_W);
         };
     };
 };

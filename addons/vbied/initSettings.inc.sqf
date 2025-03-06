@@ -89,7 +89,7 @@
     QGVAR(defaultDud),
     "SLIDER",
     [LSTRING(DefaultDud), LSTRING(DefaultDud_Description)],
-	[LSTRING(Main_Category),"VBIED Default Values"],
+    [LSTRING(Main_Category),"VBIED Default Values"],
     [0, 1, 0.2, 0, true],
     true,
     {},
@@ -173,7 +173,7 @@
     QGVAR(defaultTimerValue),
     "TIME",
     [ELSTRING(ied,TimerValue), ELSTRING(ied,DefaultTimerValue_Description)],
-	[LSTRING(Main_Category),"VBIED Default Values"],
+    [LSTRING(Main_Category),"VBIED Default Values"],
     [1, 300, 120],
     2
 ] call CBA_fnc_addSetting;
@@ -199,7 +199,7 @@
     QGVAR(defaultTimerMin),
     "TIME",
     [ELSTRING(ied,RandomTimerMin), ELSTRING(ied,DefaultTimerMin_Description)],
-	[LSTRING(Main_Category),"VBIED Default Values"],
+    [LSTRING(Main_Category),"VBIED Default Values"],
     [1, 300, 60],
     2
 ] call CBA_fnc_addSetting;
@@ -209,7 +209,7 @@
     QGVAR(defaultTimerMax),
     "TIME",
     [ELSTRING(ied,RandomTimerMax), ELSTRING(ied,DefaultTimerMax_Description)],
-	[LSTRING(Main_Category),"VBIED Default Values"],
+    [LSTRING(Main_Category),"VBIED Default Values"],
     [1, 300, 150],
     2
 ] call CBA_fnc_addSetting;

@@ -53,23 +53,23 @@ class Cfg3DEN {
                         typeName = "NUMBER";
                         condition = "objectControllable";
                         class Values {
-                            class 1	{
+                            class 1 {
                                 name = CSTRING(Variation_1);
                                 value = 0;
                             };
-                            class 2	{
+                            class 2 {
                                 name = CSTRING(Variation_2);
                                 value = 1;
                             };
-                            class 3	{
+                            class 3 {
                                 name = CSTRING(Variation_3);
                                 value = 2;
                             };
-                            class 4	{
+                            class 4 {
                                 name = CSTRING(Variation_4);
                                 value = 3;
                             };
-                            class 5	{
+                            class 5 {
                                 name = CSTRING(Variation_5);
                                 value = 4;
                             };
@@ -89,19 +89,19 @@ class Cfg3DEN {
                         typeName = "NUMBER";
                         condition = "objectControllable";
                         class Values {
-                            class 1	{
+                            class 1 {
                                 name = CSTRING(Name_Tiny);
                                 value = 0;
                             };
-                            class 2	{
+                            class 2 {
                                 name = CSTRING(Name_Small);
                                 value = 1;
                             };
-                            class 3	{
+                            class 3 {
                                 name = CSTRING(Name_Medium);
                                 value = 2;
                             };
-                            class 4	{
+                            class 4 {
                                 name = CSTRING(Name_Large);
                                 value = 3;
                             };
@@ -222,15 +222,15 @@ class Cfg3DEN {
                         defaultValue = QGVAR(defaultTimer);
                         typeName = "NUMBER";
                         class Values {
-                            class 1	{
+                            class 1 {
                                 name = CSTRING(Name_Disabled);
                                 value = 0;
                             };
-                            class 2	{
+                            class 2 {
                                 name = CSTRING(Name_Enabled);
                                 value = 1;
                             };
-                            class 3	{
+                            class 3 {
                                 name = CSTRING(Name_Random);
                                 value = 2;
                             };
@@ -256,15 +256,15 @@ class Cfg3DEN {
                         defaultValue = QGVAR(defaultRandomTimer);
                         typeName = "NUMBER";
                         class Values {
-                            class 1	{
+                            class 1 {
                                 name = CSTRING(Name_Disabled);
                                 value = 0;
                             };
-                            class 2	{
+                            class 2 {
                                 name = CSTRING(Name_Enabled);
                                 value = 1;
                             };
-                            class 3	{
+                            class 3 {
                                 name = CSTRING(Name_Random);
                                 value = 2;
                             };
