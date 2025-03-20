@@ -9,6 +9,7 @@ class Cfg3DEN {
     class Attributes {
         #include "controls.hpp"
     };
+/*
     class object {
         class AttributeCategories {
             class iedd_attributes {
@@ -124,7 +125,6 @@ class Cfg3DEN {
                         condition = "objectControllable";
                         defaultValue = 0;
                     };
-                    /* SUICIDE SETTINGS */
                     class GVAR(Suicide_Status) {
                         data = "AttributeSystemSubcategory"; // This is needed for the attribute to work
                         control = "SubCategory";
@@ -181,7 +181,6 @@ class Cfg3DEN {
                         defaultValue = "(side group _this) call BIS_fnc_sideID";
                         expression = "_this setVariable ['%s',_value];";
                     };
-                    /*UNIT STATUS*/
                     class GVAR(Charge_Status) {
                         data = "AttributeSystemSubcategory"; // This is needed for the attribute to work
                         control = "SubCategory";
@@ -207,7 +206,6 @@ class Cfg3DEN {
                         condition = "objectControllable";
                         defaultValue = QUOTE(false);
                     };
-                    /**********TIMER SETTINGS ********/
                     class GVAR(c_timer_SubCategory) {
                         data = "AttributeSystemSubcategory";
                         control = "SubCategory";
@@ -295,4 +293,5 @@ class Cfg3DEN {
             };
         };
     };
+*/
 };
